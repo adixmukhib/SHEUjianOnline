@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Ujian.master.cs" Inherits="SHEUjianOnline.Ujian" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Assets/CSS/bootstrap.css" rel="stylesheet" />
+    <link href="Assets/CSS/bootstrap-theme.css" rel="stylesheet" />    
+    <script src="Assets/JS/bootstrap.js" type="text/javascript"></script>
+    <script src="Assets/JS/bootstrap.min.js" type="text/javascript"></script>
+    <script src="Assets/JS/npm.js" type="text/javascript"></script>
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Soal Ujian</a></li>
+  <li role="presentation"><a href="#">Hasil Ujian</a></li>
+</ul>
+   
+
+</head>
+<body>
+ <div class="container-fluid">
+        <div class="row">
+      
+            <div class="col-md-12">
+             <form id="form1" runat="server">
+                <div>
+                    <asp:ContentPlaceHolder ID="UjianContent" runat="server">
+        
+                    </asp:ContentPlaceHolder>
+                </div>
+             </form>
+            </div>
+
+        </div>
+
+ </div>
+
+</body>
+</html>
